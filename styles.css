@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Themes */
+body.light {
+    background: #f5f5f5;
+    color: #333;
+}
+
+body.dark {
+    background: #222;
+    color: #fff;
+}
+
+body.neon {
+    background: #0f0f1a;
+    color: #0ff;
+}
+
+/* Buttons */
+.theme-btn, #apply-color {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.theme-btn:hover, #apply-color:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#party-btn {
+    padding: 12px 24px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+#party-btn:hover {
+    background: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* Particle Animation */
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.color-picker {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.color-picker h3 {
+    margin-top: 0;
+}
+
+#particle-color {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}

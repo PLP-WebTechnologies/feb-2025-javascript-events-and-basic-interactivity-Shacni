@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Cool Theme Switcher with Particles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Theme Switcher + Particle Magic</h1>
+        
+        <div class="theme-selector">
+            <button class="theme-btn" data-theme="light">☀️ Light</button>
+            <button class="theme-btn" data-theme="dark">🌙 Dark</button>
+            <button class="theme-btn" data-theme="neon">💡 Neon</button>
+        </div>
+
+        <div class="color-picker">
+            <h3>Particle Color</h3>
+            <input type="color" id="particle-color" value="#ff0000">
+            <button id="apply-color">Apply Color</button>
+        </div>
+
+        <button id="party-btn">🎉 Trigger Particle Animation!</button>
+        
+        <div class="particle-container" id="particles"></div>
+    </div>
+
+    <audio id="particle-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
